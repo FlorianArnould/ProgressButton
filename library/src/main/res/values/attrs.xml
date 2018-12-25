@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressButton">
+        <attr name="text" format="string|reference" />
+        <attr name="textAllCaps" format="boolean" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="progressColor" format="color"/>
+        <attr name="textAppearance" format="reference" />
+        <attr name="background" format="reference" />
+        <attr name="pressedBackground" format="reference" />
+        <attr name="successBackground" format="reference" />
+        <attr name="errorBackground" format="reference" />
+        <attr name="resultIconTint" format="color" />
+        <attr name="revertOnError" format="boolean" />
+        <attr name="revertOnSuccess" format="boolean" />
+        <attr name="revertDelayMs" format="integer" />
+    </declare-styleable>
+</resources>

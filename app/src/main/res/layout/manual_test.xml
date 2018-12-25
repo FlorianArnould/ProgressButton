@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <fr.socket.florian.progressbutton.ProgressButton
+        android:id="@+id/progress_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:background="@drawable/normal_background"
+        custom:pressedBackground="@drawable/pressed_background"
+        custom:successBackground="@drawable/success_background"
+        custom:errorBackground="@drawable/error_background"
+        custom:text="@string/button_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/success_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/success" />
+
+        <Button
+            android:id="@+id/error_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error"/>
+
+        <Button
+            android:id="@+id/reinitialize_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reinitialize"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

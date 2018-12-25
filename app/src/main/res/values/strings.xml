@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProgressButton</string>
+    <string name="button_text">my button text</string>
+    <string name="success">success</string>
+    <string name="error">error</string>
+    <string name="reinitialize">reinitialize</string>
+</resources>
