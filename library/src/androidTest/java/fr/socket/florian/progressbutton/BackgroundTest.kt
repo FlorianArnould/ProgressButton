@@ -1,15 +1,15 @@
-package fr.socket.florian.progressbutton.test
+package fr.socket.florian.progressbutton
 
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import fr.socket.florian.progressbutton.R
-import fr.socket.florian.progressbutton.test.utils.ButtonActivityTestRule
-import fr.socket.florian.progressbutton.test.utils.clickOnButton
-import fr.socket.florian.progressbutton.test.utils.pressAndHold
-import fr.socket.florian.progressbutton.test.utils.withBackground
+import fr.socket.florian.progressbutton.test.R
+import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.utils.clickOnButton
+import fr.socket.florian.progressbutton.utils.pressAndHold
+import fr.socket.florian.progressbutton.utils.withBackground
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

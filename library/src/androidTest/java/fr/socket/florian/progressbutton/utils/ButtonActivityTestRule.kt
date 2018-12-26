@@ -1,9 +1,9 @@
-package fr.socket.florian.progressbutton.test.utils
+package fr.socket.florian.progressbutton.utils
 
 import android.content.Intent
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
-import fr.socket.florian.progressbutton.test.ButtonActivity
+import fr.socket.florian.progressbutton.ButtonActivity
 
 
 class ButtonActivityTestRule : ActivityTestRule<ButtonActivity>(ButtonActivity::class.java, true, false) {

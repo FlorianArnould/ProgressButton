@@ -1,4 +1,4 @@
-package fr.socket.florian.progressbutton.test.utils
+package fr.socket.florian.progressbutton.utils
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers
-import fr.socket.florian.progressbutton.R
+import fr.socket.florian.progressbutton.test.R
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
