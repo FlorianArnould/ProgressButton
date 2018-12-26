@@ -1,5 +1,7 @@
 FROM openjdk:8
 
+ENV ANDROID_HOME /opt/Android/Sdk
+
 WORKDIR /opt/Android/Sdk
 
 ADD https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip .
