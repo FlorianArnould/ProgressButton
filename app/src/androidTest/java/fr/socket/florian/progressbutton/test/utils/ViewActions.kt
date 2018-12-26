@@ -1,4 +1,4 @@
-package fr.socket.florian.progressbutton.utils
+package fr.socket.florian.progressbutton.test.utils
 
 import android.view.MotionEvent
 import android.view.View

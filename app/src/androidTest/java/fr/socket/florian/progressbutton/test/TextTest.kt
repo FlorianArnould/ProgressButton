@@ -1,4 +1,4 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import android.graphics.Color
 import android.view.View
@@ -11,7 +11,8 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
-import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.R
+import fr.socket.florian.progressbutton.test.utils.ButtonActivityTestRule
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeMatcher
 import org.junit.Rule

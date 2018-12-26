@@ -1,14 +1,15 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
-import fr.socket.florian.progressbutton.utils.clickOnButton
-import fr.socket.florian.progressbutton.utils.pressAndHold
-import fr.socket.florian.progressbutton.utils.withBackground
+import fr.socket.florian.progressbutton.R
+import fr.socket.florian.progressbutton.test.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.test.utils.clickOnButton
+import fr.socket.florian.progressbutton.test.utils.pressAndHold
+import fr.socket.florian.progressbutton.test.utils.withBackground
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -34,14 +35,26 @@ class BackgroundTest : BaseTest() {
     @Test
     fun normalBackgroundTest() {
         Espresso.onView(ViewMatchers.withResourceName("button"))
-            .check(ViewAssertions.matches(withBackground(activity.getDrawable(R.drawable.normal_background)!!)))
+            .check(ViewAssertions.matches(
+                withBackground(
+                    activity.getDrawable(
+                        R.drawable.normal_background
+                    )!!
+                )
+            ))
     }
 
     @Test
     fun pressedBackgroundTest() {
         Espresso.onView(ViewMatchers.withId(R.id.progress_button)).perform(pressAndHold())
         Espresso.onView(ViewMatchers.withResourceName("button"))
-            .check(ViewAssertions.matches(withBackground(activity.getDrawable(R.drawable.pressed_background)!!)))
+            .check(ViewAssertions.matches(
+                withBackground(
+                    activity.getDrawable(
+                        R.drawable.pressed_background
+                    )!!
+                )
+            ))
     }
 
     @Test
@@ -53,7 +66,13 @@ class BackgroundTest : BaseTest() {
         }
         countDown.await(10, TimeUnit.SECONDS)
         Espresso.onView(ViewMatchers.withResourceName("button"))
-            .check(ViewAssertions.matches(withBackground(activity.getDrawable(R.drawable.success_background)!!)))
+            .check(ViewAssertions.matches(
+                withBackground(
+                    activity.getDrawable(
+                        R.drawable.success_background
+                    )!!
+                )
+            ))
     }
 
     @Test
@@ -65,6 +84,12 @@ class BackgroundTest : BaseTest() {
         }
         countDown.await(10, TimeUnit.SECONDS)
         Espresso.onView(ViewMatchers.withResourceName("button"))
-            .check(ViewAssertions.matches(withBackground(activity.getDrawable(R.drawable.error_background)!!)))
+            .check(ViewAssertions.matches(
+                withBackground(
+                    activity.getDrawable(
+                        R.drawable.error_background
+                    )!!
+                )
+            ))
     }
 }

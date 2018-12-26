@@ -1,7 +1,8 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import fr.socket.florian.progressbutton.ProgressButton
 import kotlinx.android.synthetic.main.manual_test.*
 
 class ButtonActivity : AppCompatActivity() {

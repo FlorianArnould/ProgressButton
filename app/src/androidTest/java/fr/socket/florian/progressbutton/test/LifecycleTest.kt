@@ -1,10 +1,11 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import android.view.View
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
-import fr.socket.florian.progressbutton.utils.clickOnButton
+import fr.socket.florian.progressbutton.R
+import fr.socket.florian.progressbutton.test.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.test.utils.clickOnButton
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Rule

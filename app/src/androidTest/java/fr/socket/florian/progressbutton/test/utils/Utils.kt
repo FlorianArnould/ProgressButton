@@ -1,4 +1,4 @@
-package fr.socket.florian.progressbutton.utils
+package fr.socket.florian.progressbutton.test.utils
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -36,7 +36,9 @@ private fun areDrawablesIdentical(drawableA: Drawable, drawableB: Drawable): Boo
     val stateB = drawableB.constantState
     // If the constant state is identical, they are using the same drawable resource.
     // However, the opposite is not necessarily true.
-    return stateA != null && stateB != null && stateA == stateB || getBitmap(drawableA).sameAs(
+    return stateA != null && stateB != null && stateA == stateB || getBitmap(
+        drawableA
+    ).sameAs(
         getBitmap(
             drawableB
         )

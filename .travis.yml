@@ -1,4 +1,5 @@
 language: android
-android:
-  components:
-    - android-29
+services:
+  - docker
+script:
+  - docker build .

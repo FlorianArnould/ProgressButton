@@ -1,9 +1,8 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import android.content.Context
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
-import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.test.espresso.Espresso
@@ -11,8 +10,9 @@ import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
-import fr.socket.florian.progressbutton.utils.clickOnButton
+import fr.socket.florian.progressbutton.R
+import fr.socket.florian.progressbutton.test.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.test.utils.clickOnButton
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeMatcher
 import org.junit.Rule

@@ -1,4 +1,4 @@
-package fr.socket.florian.progressbutton
+package fr.socket.florian.progressbutton.test
 
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.BeforeClass
