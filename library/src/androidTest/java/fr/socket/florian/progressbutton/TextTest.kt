@@ -12,6 +12,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import fr.socket.florian.progressbutton.utils.ButtonActivityTestRule
+import fr.socket.florian.progressbutton.utils.pressAndHold
+import fr.socket.florian.progressbutton.utils.release
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeMatcher
 import org.junit.Rule
@@ -75,6 +77,18 @@ class TextTest : BaseTest() {
     fun textColorResTest() {
         activityRule.launchActivity(R.layout.text_color_res)
         checkTextColorIsWhite()
+    }
+
+    @Test
+    fun checkTextVisibleOnPressed() {
+        activityRule.launchActivity(R.layout.text_res)
+        onView(withText(getInstrumentation().targetContext.getString(R.string.button_text)))
+            .perform(pressAndHold())
+        Thread.sleep(10000)
+        onView(withText(getInstrumentation().targetContext.getString(R.string.button_text)))
+            .check(matches(isDisplayed()))
+        onView(withText(getInstrumentation().targetContext.getString(R.string.button_text)))
+            .perform(release())
     }
 
     private fun checkTextColorIsWhite() {

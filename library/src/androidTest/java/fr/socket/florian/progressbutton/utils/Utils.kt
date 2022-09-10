@@ -14,7 +14,6 @@ import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
 
-
 fun clickOnButton() {
     Espresso.onView(ViewMatchers.withId(R.id.progress_button))
         .perform(ViewActions.click())

@@ -29,24 +29,24 @@ class ProgressColorTest : BaseTest() {
     fun progressColorHardcodedTest() {
         val activity = activityRule.launchActivity(R.layout.progress_color_hardcoded)
         clickOnButton()
-        progressColorGreenCheck(activity)
+        progressColorWhiteCheck(activity)
     }
 
     @Test
     fun progressColorResTest() {
         val activity = activityRule.launchActivity(R.layout.progress_color_hardcoded)
         clickOnButton()
-        progressColorGreenCheck(activity)
+        progressColorWhiteCheck(activity)
     }
 
-    private fun progressColorGreenCheck(context: Context) {
+    private fun progressColorWhiteCheck(context: Context) {
         Espresso.onView(ViewMatchers.withResourceName("buttonProgress"))
             .check(ViewAssertions.matches(object : TypeSafeMatcher<View>() {
                 override fun matchesSafely(item: View?): Boolean {
                     if (item == null || item !is ProgressBar) return false
                     return item.indeterminateDrawable.current.colorFilter == PorterDuffColorFilter(
-                        context.getColor(R.color.greenTest),
-                        PorterDuff.Mode.SRC_IN
+                        context.getColor(R.color.whiteTest),
+                        PorterDuff.Mode.DST_ATOP
                     )
                 }
 

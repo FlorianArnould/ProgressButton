@@ -7,4 +7,5 @@
     <color name="blueTest">#00F</color>
     <color name="redTest">#F00</color>
     <color name="orangeTest">#F50</color>
+    <color name="whiteTest">#FFF</color>
 </resources>

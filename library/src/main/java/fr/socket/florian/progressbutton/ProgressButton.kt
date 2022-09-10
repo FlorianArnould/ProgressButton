@@ -43,6 +43,7 @@ class ProgressButton : RelativeLayout, View.OnClickListener {
 
         inflate(context, R.layout.progress_button, this)
         button.setOnClickListener(this)
+        button.setOnTouchListener { _, _ -> buttonText.bringToFront(); false }
         initAttributes(attrs)
     }
 
@@ -104,6 +105,7 @@ class ProgressButton : RelativeLayout, View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
+        buttonText.bringToFront()
         displayButtonToProgress {
             onClickListener?.onClick(this)
         }
